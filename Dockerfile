@@ -2,6 +2,8 @@ FROM debian:stretch
 
 MAINTAINER buildmaster@rocket.chat
 
+RUN apt install gpg
+
 # gpg: key 4FD08014: public key "Rocket.Chat Buildmaster <buildmaster@rocket.chat>" imported
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104
 
